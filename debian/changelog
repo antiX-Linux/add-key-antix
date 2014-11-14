@@ -1,0 +1,103 @@
+add-key-antix (0.2.7) unstable; urgency=low 
+ 
+  * Removed gtkdialog dependency
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 19 Oct 2014 18:39:00 +0200
+
+
+add-key-antix (0.2.6) unstable; urgency=low 
+ 
+  * Rewritten for antiX-14
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 23 Jun 2014 15:20:00 +0200
+
+
+add-key-antix (0.2.5) unstable; urgency=low 
+ 
+  * Using dpkg-buildpackage
+  * desktop file nulled.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 17 October 2013 01:20:00 +0200
+
+
+add-key-antix (0.2.4) unstable; urgency=low 
+ 
+  * Add /usr/share/menu
+  * Control scripts to auto-add/remove to menu.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 26 June 2013 12:20:00 +0200
+
+
+add-key-antix (0.2.3) unstable; urgency=low 
+ 
+  * Set file permission to root:root
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 05 June 2013 23:10:00 +0200
+
+
+add-key-antix (0.2.2) unstable; urgency=low 
+ 
+  * Set to antix-session.
+  * Added None key option.
+  * Fixed add-start typo to add-key
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 15 Apr 2013 16:20:00 +0200
+
+
+add-key-antix (0.2.1) unstable; urgency=low 
+ 
+  * Jwm keys fixed.
+  * Fluxbox Alt/Mod1 Super/Mod4 fix.
+  * Added exec: (JWM) and ExecCommand: (fluxbox)
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 03 Apr 2013 13:05:00 +0200
+
+
+add-key-antix (0.2.0) unstable; urgency=low 
+ 
+  * Now written in python.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 25 Mar 2013 16:55:00 +0200
+
+
+add-key-antix (0.1.6) unstable; urgency=low 
+ 
+  * Added localisations.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 27 January 2013 20:55:00 +0200
+
+
+add-key-antix (0.1.5) unstable; urgency=low 
+ 
+  * Fixed ownership bug.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 August 2012 15:40:00 +0200
+
+
+add-key-antix (0.1.4) unstable; urgency=low 
+ 
+  * Added copyright notice.
+
+ -- anticapitalista <antiX@operamail.com> Mon, 16 July 2012 15:30:00 +0200
+
+
+add-key-antix (0.1.3) unstable; urgency=low 
+ 
+  * Altered /bin/bash.
+
+ -- anticapitalista <antiX@operamail.com> Tues, 10 July 2012 18:30:00 +0200
+
+
+add-key-antix (0.1.2) unstable; urgency=low 
+ 
+  * Added localisations.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 25 April 2012 15:30:00 +0200
+
+
+add-key-antix (0.1.1) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 28 January 2012 15:30:00 +0200
+

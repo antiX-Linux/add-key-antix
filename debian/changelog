@@ -1,3 +1,10 @@
+add-key-antix (0.2.8) unstable; urgency=low 
+ 
+  * New icon theme
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 27 Dec 2014 14:10:00 +0200
+
+
 add-key-antix (0.2.7) unstable; urgency=low 
  
   * Removed gtkdialog dependency

@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=add-key
 Exec=add-key
-Icon=/usr/share/icons/gTangish-2.0a1/48x48/apps/labyrinth.png
+Icon=preferences-desktop-keyboard-shortcuts.png
 Terminal=false
 Type=Application
 Categories=Other;

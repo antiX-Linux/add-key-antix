@@ -29,8 +29,8 @@ from desktop_tool import get_icon as get_icon
 import re
 import os
 import sys
-import locale
 import gettext
+gettext.install("add-key", "/usr/share/locale")
 
 USER_HOME = os.environ['HOME']
 DISPLAY = os.environ['DISPLAY']
@@ -63,12 +63,11 @@ class Success:
        --button=\"gtk-ok:0\"" % (success)
        os.system(cmdstring) 
        
-       
 class Remove():
     
     def build_drop_box(self):
         self.removeSelect = gtk.combo_box_new_text()
-        self.removeSelect.append_text('No line Selected:')
+        self.removeSelect.append_text(_("No line Selected:"))
     
         def icewm():
             for line in open(LOCATION, "r").xreadlines():
@@ -143,7 +142,7 @@ class Remove():
                         
             os_system_line="mv "+LOCATION+".new "+LOCATION
             os.system(os_system_line)
-            Success("line has been removed")
+            Success(_("line has been removed"))
             self.updateRemoveSelect()
             
                 
@@ -164,7 +163,7 @@ class Remove():
                 
     def __init__(self):
         
-        self.frame = gtk.Frame("Remove Items")
+        self.frame = gtk.Frame(_("Remove Items"))
         self.frame.set_border_width(10)
         self.frame.show()
         
@@ -173,7 +172,7 @@ class Remove():
         self.vbox.show()
         
         label = gtk.Label()
-        label.set_text("Line to Remove")
+        label.set_text(_("Line to Remove"))
         self.vbox.pack_start(label)
         label.show()
         
@@ -184,7 +183,7 @@ class Remove():
         #build drop box
         self.build_drop_box()
         
-        self.label = gtk.Label("Remove")
+        self.label = gtk.Label(_("Remove"))
         self.label.show()
         
         #BUTTON BOX
@@ -295,7 +294,7 @@ class Add():
         def check_key_combination():
             for line in open(LOCATION, "r").xreadlines():
                 if (self.key_combination) in line:
-                    sys.exit(Error("That key comination has been used"))
+                    sys.exit(Error((_("That key comination has been used"))))
         
         def icewm():
             self.key_combination = self.write_line+third_key
@@ -334,7 +333,7 @@ class Add():
         options = {"icewm" : icewm, "fluxbox" : fluxbox, "jwm" : jwm}
         options[DESKTOP]()
                 
-        Success("command has been added")
+        Success(_("command has been added"))
         
         #refresh remove drop box
         #Remove().afterAdd()
@@ -347,7 +346,7 @@ class Add():
         scale.set_draw_value(True)
         
     def __init__(self):
-        self.frame = gtk.Frame("Add Items")
+        self.frame = gtk.Frame(_("Add Items"))
         self.frame.set_border_width(10)
         self.frame.show()
         
@@ -356,7 +355,7 @@ class Add():
         vbox.show()
         
         self.key1 = gtk.combo_box_new_text()
-        self.key1.append_text("Select first key:")
+        self.key1.append_text(_("Select first key:"))
         self.key1.append_text("Control")
         self.key1.append_text("Alt")
         self.key1.append_text("Super")
@@ -365,7 +364,7 @@ class Add():
         self.key1.show()
         
         self.key2 = gtk.combo_box_new_text()
-        self.key2.append_text("Select second key:")
+        self.key2.append_text(_("Select second key:"))
         self.key2.append_text("Control")
         self.key2.append_text("Alt")
         self.key2.append_text("Super")
@@ -375,7 +374,7 @@ class Add():
         self.key2.show()
         
         self.key3 = gtk.Entry()
-        self.key3.set_text("third key (letter of number)")
+        self.key3.set_text(_("third key (letter of number)"))
         vbox.pack_start(self.key3)
         self.key3.show()
         
@@ -384,7 +383,7 @@ class Add():
         vbox.pack_start(self.command)
         self.command.show()
         
-        self.label = gtk.Label("Add")
+        self.label = gtk.Label(_("Add"))
         self.label.show()
         
         #BUTTON BOX
@@ -409,7 +408,7 @@ class mainWindow():
 
     def __init__(self):
         window = gtk.Window(gtk.WINDOW_TOPLEVEL)
-        window.set_title("add-key")
+        window.set_title(_("add-key"))
         pixbuf = get_icon("preferences-system", 48)
         window.set_icon(pixbuf)
         window.connect("destroy", lambda w: gtk.main_quit())
@@ -419,7 +418,7 @@ class mainWindow():
         mainbox.show()
         
         label = gtk.Label()
-        label.set_text("\nChanging keys for: "+DESKTOP+"\n")
+        label.set_text(_("Changing keys for: ")+DESKTOP+"\n")
         mainbox.pack_start(label)
         label.show()
         
@@ -441,8 +440,7 @@ class mainWindow():
         
         window.show()
 
-gettext.install(domain = "add-key", unicode   = False, codeset   = 'utf-8')
 if os.path.isfile(LOCATION) == (False):
-    sys.exit(Error("There is no file ~/.%s/keys \nThe session's DESKTOP_CODE='%s' \nincorrectly matches your system" % ((DESKTOP), (DESKTOP)) ))
+    sys.exit(Error(_("There is no file ~/.%s/keys \nThe session's DESKTOP_CODE='%s' \nincorrectly matches your system" % ((DESKTOP), (DESKTOP)) )))
 mainWindow()
 gtk.main()

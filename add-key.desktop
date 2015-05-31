@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=add-key
 Exec=add-key
-Icon=preferences-desktop-keyboard-shortcuts.png
+Icon=preferences-desktop-keyboard-shortcuts
 Terminal=false
 Type=Application
 Categories=Other;

@@ -1,3 +1,17 @@
+add-key-antix (0.3.0) unstable; urgency=low 
+ 
+  * Fixed broken translations.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 13 Apr 2015 17:42:00 +0200
+
+
+add-key-antix (0.2.9) unstable; urgency=low 
+ 
+  * Corrected .desktop icon path
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 02 Jan 2015 18:06:00 +0200
+
+
 add-key-antix (0.2.8) unstable; urgency=low 
  
   * New icon theme

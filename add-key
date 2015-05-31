@@ -294,7 +294,7 @@ class Add():
         def check_key_combination():
             for line in open(LOCATION, "r").xreadlines():
                 if (self.key_combination) in line:
-                    sys.exit(Error((_("That key comination has been used"))))
+                    sys.exit(Error((_("That key combination has been used"))))
         
         def icewm():
             self.key_combination = self.write_line+third_key
@@ -374,7 +374,7 @@ class Add():
         self.key2.show()
         
         self.key3 = gtk.Entry()
-        self.key3.set_text(_("third key (letter of number)"))
+        self.key3.set_text(_("third key (letter or number)"))
         vbox.pack_start(self.key3)
         self.key3.show()
         

@@ -1,4 +1,3 @@
-add-key.desktop /usr/share/applications/antix
-locale/*        /usr/share/locale
-changelog.gz    /usr/share/doc/add-key-antix 
-copyright       /usr/share/doc/add-key-antix 
+add-key 	usr/local/bin
+add-key.desktop usr/share/applications/antix
+locale/*        usr/share/locale

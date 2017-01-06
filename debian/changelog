@@ -1,3 +1,9 @@
+add-key-antix (0.3.2) unstable; urgency=medium
+
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Fri, 06 Jan 2017 23:18:59 +0200
+
 add-key-antix (0.3.1) unstable; urgency=low 
  
   * Remove Czech

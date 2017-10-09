@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=add-key
+Name=Add Key
 Exec=add-key
 Icon=preferences-desktop-keyboard-shortcuts
 Terminal=false
 Type=Application
-Categories=Other;
-NoDisplay=True
+Categories=Settings;
+NoDisplay=False

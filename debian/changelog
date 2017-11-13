@@ -1,3 +1,10 @@
+add-key-antix (0.3.7) unstable; urgency=medium
+
+  * localized desktop file
+  * Improved translations
+
+ -- anticapitalista <antix@operamail.com>  Mon, 13 Nov 2017 18:04:20 +0200
+
 add-key-antix (0.3.6) unstable; urgency=medium
 
   * make add-key executable

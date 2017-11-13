@@ -1,6 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Add Key
+Name[ca]=Afegeix drecera de teclat
+Name[de]=Taste hinzufügen (add-key)
+Name[el]=add-key
+Name[es]=Agregue-llave (add-key)
+Name[fr]=Ajout-clavier (add-key)
+Name[it]=Aggiungi-chiave
+Name[nl]=toevoegen-sleutel
+Name[pt]=Adicionar teclas
+Name[sv]=lägg-till-nyckel
+Comment=Add keybinds to fluxbox, jwm, icewm key files
+Comment[ca]=Afegeix dreceres de teclat als fitxers de fluxbox, icewm i jwm
+Comment[de]=Tastenbelegungen der fluxbox, jwm und icewm key-Dateien
+Comment[el]=Προσθέστε keybinds για fluxbox, JWM, IceWΜ
+Comment[es]=Agregue keybinds a archivos de llaves de fluxbox, jwm, icewm
+Comment[fr]=Ajoute des raccourcis claviers aux fichiers principaux de fluxbox, jwm, icewm
+Comment[it]=Aggiungi keybinds ai files dei tasti-chiave di fluxbox, jwm, icewm
+Comment[nl]=Voeg sleutelverbindingen toe aan fluxbox, jwm, icewm sleutelbestanden
+Comment[pt]=Adicionar ligações a teclas em ficheiros de teclas fluxbox, jwm e icewm
+Comment[sv]=Lägg till nyckelförbindningar till fluxbox, jwm, icewm nyckelfiler
 Exec=add-key
 Icon=preferences-desktop-keyboard-shortcuts
 Terminal=false

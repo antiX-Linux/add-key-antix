@@ -1,3 +1,9 @@
+add-key-antix (0.3.8) unstable; urgency=medium
+
+  * New Amharic
+
+ -- anticapitalista <antix@operamail.com>  Fri, 02 Mar 2018 15:48:56 +0200
+
 add-key-antix (0.3.7) unstable; urgency=medium
 
   * localized desktop file
